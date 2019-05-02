@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{853D0760-6FC1-49AA-8560-9667D3FE5817}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Miniproject</RootNamespace>
+    <AssemblyName>Miniproject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advisor.Designer.cs">
+      <DependentUpon>Advisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluation.Designer.cs">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eval_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eval_info.Designer.cs">
+      <DependentUpon>Eval_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group_info.Designer.cs">
+      <DependentUpon>group_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group_project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group_project.Designer.cs">
+      <DependentUpon>Group_project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group_eval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group_eval.Designer.cs">
+      <DependentUpon>Group_eval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group_formation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group_formation.Designer.cs">
+      <DependentUpon>Group_formation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_stu.Designer.cs">
+      <DependentUpon>list_stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managing_Groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managing_Groups.Designer.cs">
+      <DependentUpon>Managing_Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="management.Designer.cs">
+      <DependentUpon>management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project_assign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project_assign.Designer.cs">
+      <DependentUpon>Project_assign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project_details.Designer.cs">
+      <DependentUpon>Project_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pro_adv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pro_adv.Designer.cs">
+      <DependentUpon>Pro_adv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_Pro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_Pro.Designer.cs">
+      <DependentUpon>list_Pro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports.Designer.cs">
+      <DependentUpon>reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stu_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stu_report.Designer.cs">
+      <DependentUpon>stu_report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Advisor.resx">
+      <DependentUpon>Advisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluation.resx">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eval_info.resx">
+      <DependentUpon>Eval_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group_info.resx">
+      <DependentUpon>group_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group_project.resx">
+      <DependentUpon>Group_project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group_eval.resx">
+      <DependentUpon>Group_eval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group_formation.resx">
+      <DependentUpon>Group_formation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_stu.resx">
+      <DependentUpon>list_stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managing_Groups.resx">
+      <DependentUpon>Managing_Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="management.resx">
+      <DependentUpon>management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project_assign.resx">
+      <DependentUpon>Project_assign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project_details.resx">
+      <DependentUpon>Project_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pro_adv.resx">
+      <DependentUpon>Pro_adv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_Pro.resx">
+      <DependentUpon>list_Pro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stu_report.resx">
+      <DependentUpon>stu_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
